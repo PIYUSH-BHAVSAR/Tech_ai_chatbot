@@ -13,32 +13,34 @@
         }
 
         body, html {
-            background-color: #fff;
-            height: 100%;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            min-width: 100vw; /* Ensure full width */
+            margin: 0;
+            padding: 0;
             overflow: hidden;
+            background-color: #fff;
         }
 
         .chat-container {
-            width: 100%;
+            width: 100vw;
             height: 100vh;
+            min-width: 100vw; /* Prevent shrinking */
+            max-width: none;
             display: flex;
             flex-direction: column;
             background: #ffffff;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            border: 2px solid red; /* Debugging - Remove if not needed */
         }
 
         .chat-header {
-        background: #000;
-        color: white;
-        text-align: center;
-        padding: 20px; /* Increased padding */
-        font-size: 24px; /* Larger font size */
-        font-weight: bold;
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
         }
 
         .chat-area {
